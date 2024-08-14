@@ -44,7 +44,7 @@ defmodule Licensir.Scanner do
     if Keyword.has_key?(Mix.Dep.__info__(:functions), :load_on_environment) do
       :load_on_environment
     else
-      :loaded
+      :cached
     end
   end
 
