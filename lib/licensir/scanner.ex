@@ -5,8 +5,10 @@ defmodule Licensir.Scanner do
   alias Licensir.{License, FileAnalyzer, Guesser}
 
   @human_names %{
-    apache2: "Apache 2",
-    bsd: "BSD",
+    apache2: "Apache-2.0",
+    # bsd: "BSD",
+    bsd_2_clause: "BSD-2-Clause",
+    bsd_3_clause: "BSD-3-Clause",
     cc0: "CC0-1.0",
     gpl_v2: "GPLv2",
     gpl_v3: "GPLv3",
