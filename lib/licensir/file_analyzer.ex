@@ -5,7 +5,8 @@ defmodule Licensir.FileAnalyzer do
   # The files that contain the actual text for each license
   @files [
     apache2: ["Apache2_text.txt", "Apache2_text.variant-2.txt", "Apache2_url.txt"],
-    bsd: ["BSD-3.txt", "BSD-3.variant-2.txt"],
+    bsd_3_clause: ["BSD-3.txt", "BSD-3.variant-2.txt"],
+    bsd_2_clause: ["BSD-2.txt", "BSD-2.variant-2.txt"],
     cc0: ["CC0-1.0.txt"],
     gpl_v2: ["GPLv2.txt"],
     gpl_v3: ["GPLv3.txt"],
