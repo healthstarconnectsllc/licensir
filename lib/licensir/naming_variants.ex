@@ -3,11 +3,13 @@ defmodule Licensir.NamingVariants do
   Consolidate different naming variants of the same license to a single name.
   """
   @variants %{
-    # Apache 2.0
-    "Apache 2" => "Apache 2.0",
-    "Apache v2.0" => "Apache 2.0",
-    "Apache 2 (see the file LICENSE for details)" => "Apache 2.0",
-    "Apache-2.0" => "Apache 2.0"
+    # Apache-2.0 to conform with SPDX identifier
+    # https://spdx.org/licenses/
+    "Apache 2.0" => "Apache-2.0",
+    "Apache 2" => "Apache-2.0",
+    "Apache v2.0" => "Apache-2.0",
+    "Apache 2 (see the file LICENSE for details)" => "Apache-2.0",
+    "Apache-2.0" => "Apache-2.0"
   }
 
   @doc """
