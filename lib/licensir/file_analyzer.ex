@@ -48,5 +48,5 @@ defmodule Licensir.FileAnalyzer do
     end) || :unrecognized_license_file
   end
 
-  defp clean(content), do: String.replace(content, ~r/\v/, "")
+  defp clean(content), do: content |> String.replace("\n", " ") |> String.replace(~r/\s+/, " ")
 end
