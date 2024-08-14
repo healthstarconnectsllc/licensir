@@ -8,7 +8,7 @@ defmodule Licensir.Mixfile do
     [
       app: :licensir,
       version: @version,
-      elixir: "~> 1.5",
+      elixir: "~> 1.8",
       elixirc_paths: elixirc_paths(Mix.env()),
       escript: [main_module: Licensir.Licenses],
       name: "Licensir",
